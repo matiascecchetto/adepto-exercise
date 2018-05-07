@@ -1,0 +1,14 @@
+Employee ID,Valid Roles,Max Hours,Days Unavailable
+1,"Manager,Chef",40,MON
+2,"Cook,Chef",30,
+3,Dishwasher,30,
+4,Chef,30,"THU,FRI"
+5,Chef,30,
+6,Cook,30,
+7,Dishwasher,30,
+8,Manager,30,SUN
+9,Chef,30,"TUE,WED"
+10,Cook,30,
+11,Cook,30,
+12,Chef,30,
+13,Dishwasher,40,

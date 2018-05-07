@@ -1,0 +1,14 @@
+Shift ID,Day,Required Role,Hours
+1,SAT,Manager,9
+2,SAT,Chef,8
+3,SAT,Chef,4
+4,SAT,Cook,7
+5,SAT,Cook,3
+6,SAT,Dishwasher,8
+7,SUN,Manager,9
+8,SUN,Chef,8
+9,SUN,Chef,6
+10,SUN,Cook,8
+11,SUN,Cook,4
+12,SUN,Dishwasher,5
+13,SUN,Dishwasher,5
