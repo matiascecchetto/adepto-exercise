@@ -13,41 +13,50 @@ takeaway store. Attached is sample data giving the shifts that need to be filled
 weekend and the staff available (along with some attributes).
 
 There are several activities you could consider:
+
 ● Develop some questions (for the takeaway store owner) that support further
 requirements that you might need in order to more fully specify such an application.
+
 ● Create a minimal database schema (or equivalently, ORM model definitions) for the
 application. You could also demonstrate the effectiveness of your schema by writing
 a routine to read the sample data from the database.
+
 ● Design a web API which could be used for communication between the web app's
 server and client.
+
 ● Describe and/or implement an algorithm which generates an allocation of staff to
 shifts.
 
 ## Considerations
 Please provide relevant source code of your implementation and any documentation and
 assumptions that you feel are appropriate.
+
 ● The intent of this challenge is to provide us an opportunity to judge your problem
 solving, design and development skills.
+
 ● It is important to provide a solution that highlights your skills in these areas.
+
 ● It is also important that your solution highlights your knowledge of and approach to
 agile software development and the key software engineering practices and
 supporting processes that are important in an agile environment.
-● It is not so important to provide a fully working application.
 
-#######################################################################################################
+● It is not so important to provide a fully working application.
 
 ## Questions for the owner
 
 ● How would you like to balance the workload between your staff? And is that depending on the role?
+
 ● Is there a maximum of hours an employee can work a day/week?
+
 ● Is there a minimum of hours an employee can work a day/week?
+
 ● In case of a full shift, would you prefer to cover it with just one employee on one long shift or split the shift and have two employees covering it?
 
 ## Limitations
 
 ● As the days are defined per name, won't be able to plan more than one week ahead
 
-## Generate the allocation of employees to shiftsAssignedToEmployee
+## Generate the allocation of employees to shifts
 
 Go to http://localhost:8080/v1/shift/allocate
 
