@@ -1,21 +1,21 @@
-package au.com.adepto.demo;
+package au.com.adepto.demo.model;
 
 import javax.persistence.Entity;
-import javax.persistence.Table;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
-@Table(schema="TAKEAWAY_SHOP", name = "ROLES")
+@Table(schema = "TAKEAWAY_SHOP", name = "ROLES")
 public class Role {
 
-  @Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	private String description;
 
-  public long getId() {
+	public long getId() {
 		return id;
 	}
 

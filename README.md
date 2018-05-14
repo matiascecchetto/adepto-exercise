@@ -94,7 +94,6 @@ The H2 DB console can be accessed in the browser. Navigate to [/v1/h2](http://lo
 and ensure the `JDBC URL` matches the one defined in the `application.yml` file: jdbc:h2:file:~/simple-shift-db
 
 **Note 1**: removing the `database_init` file, which will be placed in your home by default, will reset the database.
-**Note 2**: if the database is not initialised properly, run the SQL file from this web console.
 
 ## Flyway
 

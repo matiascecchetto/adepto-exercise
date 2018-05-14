@@ -1,14 +1,15 @@
-package au.com.adepto.demo;
+package au.com.adepto.demo.repository;
 
-// import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+
+import au.com.adepto.demo.model.Employee;
 
 @RepositoryRestResource(collectionResourceRel = "staff", path = "staff")
 public interface EmployeeRepository extends CrudRepository<Employee, Long> {
-
-	Employee findById(@Param("id") Long id);
-
+	
+	Optional<Employee> findById(Long id);
+	
 }
