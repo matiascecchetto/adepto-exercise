@@ -41,7 +41,7 @@ ADD FOREIGN KEY (id_employee)
 REFERENCES TAKEAWAY_SHOP.STAFF(id);
 
 INSERT INTO TAKEAWAY_SHOP.ROLES (description)
-VALUES ('Chef'), ('Cook'), ('Dishwasher'), ('Manager');
+VALUES ('Chef'), ('Cook'), ('Dishwasher'), ('Manager'), ('Baristo');
 
 INSERT INTO TAKEAWAY_SHOP.STAFF (max_weekly_hours)
 VALUES (40), (30), (30), (30), (30), (30), (30), (30), (30), (30), (30), (30), (40);

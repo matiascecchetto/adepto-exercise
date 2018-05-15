@@ -15,14 +15,14 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import au.com.adepto.demo.exception.ResourceAlreadyExistException;
 import au.com.adepto.demo.model.Shift;
-import au.com.adepto.demo.service.IShiftService;
+import au.com.adepto.demo.service.ShiftService;
 
 @Controller
 @RequestMapping(path = "/api/shift")
 public class ShiftController {
 
 	@Autowired
-	private IShiftService shiftService;
+	private ShiftService shiftService;
 	
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<Iterable<Shift>> getAll() {

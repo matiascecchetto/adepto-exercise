@@ -24,6 +24,16 @@ public class Shift {
 	@JoinColumn(name = "assignee")
 	private Employee assignee;
 
+	public Shift() {
+	};
+
+	public Shift(String day, int hours, Role role, Employee assignee) {
+		super();
+		this.day = day;
+		this.role = role;
+		this.assignee = assignee;
+	}
+
 	public long getId() {
 		return id;
 	}

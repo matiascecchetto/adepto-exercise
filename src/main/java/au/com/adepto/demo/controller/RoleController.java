@@ -18,14 +18,14 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import au.com.adepto.demo.exception.ResourceAlreadyExistException;
 import au.com.adepto.demo.model.Role;
-import au.com.adepto.demo.service.IRoleService;
+import au.com.adepto.demo.service.RoleService;
 
 @Controller
 @RequestMapping(path = "/api/roles")
 public class RoleController {
 
 	@Autowired
-	private IRoleService roleService;
+	private RoleService roleService;
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public ResponseEntity<Optional<Role>> get(@PathVariable Long id) {

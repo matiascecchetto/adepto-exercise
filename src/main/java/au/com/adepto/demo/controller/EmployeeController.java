@@ -15,14 +15,14 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import au.com.adepto.demo.exception.ResourceAlreadyExistException;
 import au.com.adepto.demo.model.Employee;
-import au.com.adepto.demo.service.IEmployeeService;
+import au.com.adepto.demo.service.EmployeeService;
 
 @Controller
 @RequestMapping(path = "/api/staff")
 public class EmployeeController {
 
 	@Autowired
-	private IEmployeeService employeeService;
+	private EmployeeService employeeService;
 	
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<Iterable<Employee>> getAll() {

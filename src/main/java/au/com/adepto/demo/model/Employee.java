@@ -32,6 +32,24 @@ public class Employee {
 	@Column(name = "day")
 	private List<String> unavailableDays;
 
+	public Employee() {
+	};
+
+	public Employee(int maxWeeklyHours, List<Role> roles, List<String> unavailableDays) {
+		super();
+		this.maxWeeklyHours = maxWeeklyHours;
+		this.roles = roles;
+		this.unavailableDays = unavailableDays;
+	}
+
+	public Employee(Long id, int maxWeeklyHours, List<Role> roles, List<String> unavailableDays) {
+		super();
+		this.id = id;
+		this.maxWeeklyHours = maxWeeklyHours;
+		this.roles = roles;
+		this.unavailableDays = unavailableDays;
+	}
+
 	public long getId() {
 		return id;
 	}

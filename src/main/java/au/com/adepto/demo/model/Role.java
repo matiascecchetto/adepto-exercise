@@ -15,6 +15,20 @@ public class Role {
 	private long id;
 	private String description;
 
+	public Role() {
+	};
+
+	public Role(String description) {
+		super();
+		this.description = description;
+	}
+
+	public Role(Long id, String description) {
+		super();
+		this.id = id;
+		this.description = description;
+	}
+
 	public long getId() {
 		return id;
 	}
