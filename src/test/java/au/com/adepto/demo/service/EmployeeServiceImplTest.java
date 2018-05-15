@@ -131,7 +131,6 @@ public class EmployeeServiceImplTest {
 		Mockito.when(employeeRepository.save(any(Employee.class))).thenReturn(new Employee(30, roles, unavailableDays));
 
 		// when
-		
 		Employee createdEmployee = employeeService.create(employee);
 
 		// then
